@@ -28,6 +28,7 @@ int main( int argc, char *argv){
 		printf("Process %d Received %d from process %d\n",rank, token, size-1);		
 
 	}
+	MPI_Barrier(MPI_COMM_WORLD);
 	MPI_Finalize();
 	return 0;
 
